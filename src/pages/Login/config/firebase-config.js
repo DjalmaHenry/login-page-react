@@ -2,12 +2,12 @@ import firebase from "firebase";
 import "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD6Xy9zTWPL0blqiE2G2RdP2vuOWNT-qGk",
-    authDomain: "teste-login-mani.firebaseapp.com",
-    projectId: "teste-login-mani",
-    storageBucket: "teste-login-mani.appspot.com",
-    messagingSenderId: "275320800232",
-    appId: "1:275320800232:web:13a72c37f5e4bd80521a5d"
+    apiKey: "AIzaSyA32dSLn99U4SSbzB9PKQc1T2zY9ZdpJSM",
+    authDomain: "login-page-react-3ab9b.firebaseapp.com",
+    projectId: "login-page-react-3ab9b",
+    storageBucket: "login-page-react-3ab9b.appspot.com",
+    messagingSenderId: "776234849099",
+    appId: "1:776234849099:web:3a02cd9335dafccee48ece"
   };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
