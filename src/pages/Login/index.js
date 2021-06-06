@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './login.css'
 import { MdEmail, MdLock } from "react-icons/md";
 import { HiEye, HiEyeOff } from "react-icons/hi";
+import socialMediaAuth from './service/auth';
+import { googleProvider } from './config/authMethods';
 
 function Login() {
 const [email, setEmail] = useState("")
@@ -10,6 +12,10 @@ const [show, setShow] = useState(false)
 const handleClick = (e) => {
     e.preventDefault()
     setShow(!show);
+}
+const handleOnClick = async(provider) => {
+    const res = await socialMediaAuth(provider);
+    console.log(res);
 }
 
     return (
@@ -58,6 +64,10 @@ const handleClick = (e) => {
 
                     <button type="submit">
                         Entrar
+                    </button>
+
+                    <button onClick={() => handleOnClick(googleProvider)}>
+                        Entrar com o Google
                     </button>
 
                     <h4>Não tenho conta!</h4>
