@@ -33,7 +33,7 @@ const handleOnClick = async(provider) => {
                         <MdEmail />
                         <input 
                         type="email" 
-                        placeholder="Digite um e-mail"
+                        placeholder="Digite seu e-mail"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
                         />
